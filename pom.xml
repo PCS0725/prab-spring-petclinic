@@ -42,7 +42,7 @@
         </pluginManagement>
     </build>
     <scm>
-        <developerConnection>scm:git:git@github.com:PCS0725/prab-spring-petclinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/PCS0725/prab-spring-petclinic.git</developerConnection>
         <tag>prab-spring-petclinic-0.0.1</tag>
     </scm>
 
