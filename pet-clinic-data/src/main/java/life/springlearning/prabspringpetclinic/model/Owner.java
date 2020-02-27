@@ -1,4 +1,5 @@
 package life.springlearning.prabspringpetclinic.model;
 
-public class Owner {
+public class Owner extends Person{
+
 }

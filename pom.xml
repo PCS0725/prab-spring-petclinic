@@ -43,7 +43,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/PCS0725/prab-spring-petclinic.git</developerConnection>
-        <tag>prab-spring-petclinic-0.0.1</tag>
+        <tag>prab-spring-petclinic-0.0.1-SNAPSHOT</tag>
     </scm>
 
 </project>
