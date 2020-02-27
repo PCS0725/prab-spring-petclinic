@@ -1,11 +1,5 @@
 package life.springlearning.prabspringpetclinic.services;
 
-import life.springlearning.prabspringpetclinic.model.Pet;
+public interface PetService extends CrudService{
 
-import java.util.Set;
-
-public interface PetService {
-    Pet findById(Long id);
-    Set<Pet> findAll();
-    Pet save(Pet pet);
 }
