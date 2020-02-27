@@ -1,5 +1,7 @@
 package life.springlearning.prabspringpetclinic.services;
 
-public interface VetService extends CrudService {
+import life.springlearning.prabspringpetclinic.model.Vet;
+
+public interface VetService extends CrudService<Vet, Long> {
 
 }
