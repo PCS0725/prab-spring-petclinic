@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <title>List of Owners</title>
 </head>
+<!--/*@thymesVar id ="owner" type ="package life.springlearning.prabspringpetclinic.model.Owner"*/-->
 <body>
-<h1 th:text="'List of owners'">Owners list</h1>
+    <h1 th:text="'List of owners'">Owners list</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="owner : ${owners}">
+            <td th:text="${owner?.id}">1</td>
+            <td th:text="${owner?.firstName}">Joey</td>
+            <td th:text="${owner?.lastName}">Tribiani</td>
+        </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>

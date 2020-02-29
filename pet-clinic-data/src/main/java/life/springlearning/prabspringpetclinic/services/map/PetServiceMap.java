@@ -2,10 +2,12 @@ package life.springlearning.prabspringpetclinic.services.map;
 
 import life.springlearning.prabspringpetclinic.model.Pet;
 import life.springlearning.prabspringpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
+@Service
+public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService{
 
     @Override
     public Set<Pet> findAll() {
@@ -29,6 +31,6 @@ public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetSe
 
     @Override
     public Pet save(Pet object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 }

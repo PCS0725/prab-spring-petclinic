@@ -2,10 +2,12 @@ package life.springlearning.prabspringpetclinic.services.map;
 
 import life.springlearning.prabspringpetclinic.model.Owner;
 import life.springlearning.prabspringpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
+@Service
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService{
 
     @Override
     public Set<Owner> findAll() {
@@ -29,7 +31,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
 
     @Override
     public Owner save(Owner object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 
     @Override
